@@ -1,0 +1,102 @@
+/* Directory-specific styles */
+.directory-filters .search-bar {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.directory-filters .btn-group-sm {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+/* Tag styles */
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+}
+
+.tags .badge {
+    font-size: 0.8rem;
+    font-weight: normal;
+    padding: 0.5em 0.8em;
+    margin: 0; /* Remove margin since we're using gap */
+}
+
+/* Technology tags */
+.tags .bg-primary {
+    background-color: transparent !important;
+    color: #0d6efd;
+    border: 1px solid #0d6efd;
+}
+
+/* Application/Industry tags */
+.tags .bg-secondary {
+    background-color: transparent !important;
+    color: #6c757d;
+    border: 1px solid #6c757d;
+}
+
+/* Target Market tags */
+.tags .bg-info {
+    background-color: transparent !important;
+    color: #0dcaf0;
+    border: 1px solid #0dcaf0;
+}
+
+/* Status tags */
+.tags .bg-success {
+    background-color: transparent !important;
+    color: #198754;
+    border: 1px solid #198754;
+}
+
+/* Implementation tags */
+.tags .bg-warning {
+    background-color: transparent !important;
+    color: #fd7e14;
+    border: 1px solid #fd7e14;
+}
+
+/* Card styles */
+.card {
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+/* Adjust section spacing */
+.section {
+    padding: 2rem 0; /* Reduced from default */
+}
+
+.intro-section {
+    padding-bottom: 1rem; /* Reduced bottom padding specifically */
+}
+
+.directory-section {
+    padding-top: 1rem; /* Reduced top padding specifically */
+}
+
+/* Add styles for the collapsed view */
+.company-preview-row {
+    margin-bottom: 1.5rem;
+}
+
+.show-more-container {
+    text-align: center;
+    margin: 2rem 0;
+}
+
+.show-more-btn {
+    padding: 0.75rem 2.5rem;
+    font-size: 1.1rem;
+}
+
+/* Add this CSS to your existing styles */
+#companyList {
+    margin-top: 1rem; /* Match this to your existing gap size */
+} 

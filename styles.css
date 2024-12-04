@@ -36,11 +36,12 @@ header nav a:hover {
     text-decoration: underline;
 }
 
-.hero {
+.hero { 
+    /* TODO: change the background here to a nice image*/
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('path-to-hero-image.jpg') no-repeat center center/cover;
     color: #fff;
     text-align: center;
-    padding: 100px 20px;
+    padding: 80px 20px;
 }
 
 .hero h1 {
@@ -51,7 +52,7 @@ header nav a:hover {
 
 .hero p {
     font-size: 1.25rem;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 
 .hero .btn {
