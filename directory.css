@@ -26,16 +26,16 @@
 
 /* Technology tags */
 .tags .bg-primary {
-    background-color: transparent !important;
-    color: #0d6efd;
-    border: 1px solid #0d6efd;
+    background-color: #6f42c1 !important;
+    color: white;
+    border: 1px solid #6f42c1;
 }
 
 /* Application/Industry tags */
 .tags .bg-secondary {
-    background-color: transparent !important;
-    color: #6c757d;
-    border: 1px solid #6c757d;
+    background-color: #e0b0ff !important;
+    color: #6f42c1;
+    border: 1px solid #6f42c1;
 }
 
 /* Target Market tags */
@@ -62,6 +62,8 @@
 /* Card styles */
 .card {
     transition: transform 0.2s;
+    border: 1px solid #6f42c1;
+    border-radius: 0.5rem;
 }
 
 .card:hover {
@@ -99,4 +101,38 @@
 /* Add this CSS to your existing styles */
 #companyList {
     margin-top: 1rem; /* Match this to your existing gap size */
+}
+
+/* Update button styles to be more purple */
+.btn {
+    background-color: #6f42c1; /* Purple background */
+    color: white; /* White text for contrast */
+    border: none; /* Remove border */
+}
+
+.btn:hover {
+    background-color: #5a32a1; /* Darker purple on hover */
+}
+
+/* Define btn-primary styles to ensure they are purple */
+.btn-primary {
+    background-color: #4b2e8c !important; /* Dark purple background */
+    color: white !important; /* White text for contrast */
+    border: none !important; /* Remove border */
+}
+
+.btn-primary:hover {
+    background-color: #3e2470 !important; /* Darker purple on hover */
+}
+
+/* Update Visit Website button to be outlined */
+.btn-outline-primary {
+    background-color: transparent; /* Transparent background */
+    color: #4b2e8c !important; /* Dark purple text */
+    border: 2px solid #4b2e8c !important; /* Dark purple border */
+}
+
+.btn-outline-primary:hover {
+    background-color: #4b2e8c !important; /* Dark purple background on hover */
+    color: white !important; /* White text on hover */
 } 
