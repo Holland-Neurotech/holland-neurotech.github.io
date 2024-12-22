@@ -12,7 +12,7 @@ body {
 }
 
 header {
-    background-color: #120f26;
+    background: linear-gradient(to right, #120f26, #6f42c1); /* Dark to purple gradient */
     color: #f2f4ff;
     padding: 15px 0;
 }
@@ -38,10 +38,12 @@ header nav a:hover {
 
 .hero { 
     /* TODO: change the background here to a nice image*/
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('path-to-hero-image.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('images/WhatsApp\ Image\ 2024-06-28\ at\ 17.30.21.jpeg') no-repeat center center/cover;
     color: #fff;
     text-align: center;
     padding: 80px 20px;
+    background-size: cover; /* Ensure the image covers the entire section */
+    background-position: center; /* Center the image */
 }
 
 .hero h1 {
@@ -225,4 +227,58 @@ footer p {
 
 .contact-details a:hover {
     text-decoration: underline;
+}
+
+.subscribe-section, .download-section {
+    padding: 40px 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.subscribe-section h2, .download-section h2 {
+    font-size: 2rem;
+    color: #120f26;
+}
+
+.subscribe-section p, .download-section p {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+.btn-primary {
+    background-color: #6f42c1; /* Set to a purple color */
+    color: #fff; /* Keep the text color white for contrast */
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.btn-primary:hover {
+    background-color: #5a32a1; /* Darker shade of purple on hover */
+}
+
+.projects .card-img-top {
+    max-width: 100%; /* Ensure the image does not exceed the width of the card */
+    max-height: 200px; /* Set a maximum height for the images */
+    width: auto; /* Allow the width to adjust automatically */
+    height: auto; /* Allow the height to adjust automatically */
+    object-fit: contain; /* Maintain aspect ratio without cropping */
+    border-radius: 10px; /* Optional: add rounded corners to images */
+}
+
+.projects .row {
+    display: flex; /* Use Flexbox for alignment */
+    justify-content: space-between; /* Distribute space evenly */
+    flex-wrap: wrap; /* Allow wrapping if necessary */
+}
+
+.projects .col-md-4 {
+    flex: 1; /* Allow columns to grow equally */
+    max-width: 30%; /* Set a maximum width for each card */
+    margin: 10px; /* Add some margin for spacing */
+}
+
+header .btn-primary {
+    background-color: #6f42c1; /* Purple color */
+    color: #fff;
 }
