@@ -27,9 +27,9 @@
     <meta name="twitter:image:alt" content="Holland Neurotech Inc. Preview">
 
     <title>Holland Neurotech Inc. | Leading Innovation in Neurotechnology</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="flourish_css.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ER3N9QY7E1"></script>
@@ -40,125 +40,443 @@
 
     gtag('config', 'G-ER3N9QY7E1');
     </script>
+
+    <!-- Cookie Consent by Insites -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+    <script>
+        window.addEventListener("load", function(){
+            window.cookieconsent.initialise({
+                "palette": {
+                    "popup": {
+                        "background": "#9c56c2",
+                        "text": "#ffffff"
+                    },
+                    "button": {
+                        "background": "#ffffff",
+                        "text": "#9c56c2"
+                    }
+                },
+                "theme": "edgeless",
+                "content": {
+                    "message": "This website uses cookies to ensure you get the best experience on our website.",
+                    "dismiss": "Got it!",
+                    "link": "Learn more",
+                    "href": "privacy-policy.html" // Link to your privacy policy
+                }
+            })});
+    </script>
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <nav class="container">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="https://gaia-health.github.io/" target="_blank">Go Go GAIA</a>
-            <a href="https://neurotechnerd.substack.com/" target="_blank">Neurotech Nerds' Nexus</a>
-            <a href="directory.html">Neurotech Company Directory</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">H</div>
+                    <span>Holland</span> Neurotech
+                </a>
+                <div class="nav-links">
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#services">Services</a>
+                    <a href="https://gaia-health.github.io/" target="_blank">Go Go GAIA</a>
+                    <a href="directory.html">Neurotech Directory</a>
+                </div>
+                <div class="header-btns">
+                    <a href="contact.html" class="btn btn-light">Contact</a>
+                    <a href="https://apps.apple.com/ca/app/go-go-gaia/id6608432371" class="btn">Download Our App</a>
+                </div>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section class="hero" style="background-image: url('images/WhatsApp\ Image\ 2024-06-28\ at\ 17.30.21.jpeg');">
+        <!-- Hero Section -->
+        <section class="hero">
             <div class="container">
-                <h1>Leading Innovation in Neurotechnology</h1>
-                <p>Explore our cutting-edge solutions in women's health and wearables.</p>
-                <a href="#projects" class="btn btn-primary">Explore Our Projects</a>
+                <div class="hero-content">
+                    <div class="hero-text">
+                        <div class="hero-badge">
+                            <i class="fas fa-brain"></i>
+                            Neurotech meets Women's Health
+                        </div>
+                        <h1 class="hero-heading">Leading Innovation in Neurotechnology</h1>
+                        <p class="hero-subheading">A Canadian-based company pioneering advanced technologies that bridge neuroscience with women's health management through practical, data-driven insights and innovative wearable technologies.</p>
+                        <div class="hero-btns">
+                            <a href="#projects" class="btn">Explore Our Projects <i class="fas fa-arrow-right btn-icon"></i></a>
+                            <a href="#services" class="btn btn-light">Our Services <i class="fas fa-briefcase btn-icon"></i></a>
+                        </div>
+                    </div>
+                    <div class="hero-image">
+                        <img src="images/app-store-iphone 5.5_ (1).png" alt="Go Go GAIA App" class="phone-mockup">
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="section about-home-section">
+        <!-- About Section -->
+        <section id="about" class="features">
             <div class="container">
-                <h2>About Us</h2>
-                <p>At Holland Neurotech Inc., we are driven by the vision to pioneer advanced technologies that bridge advancements in neurotech with everyday health management. Our commitment is to leverage cutting-edge science to create solutions that enhance longevity and optimize women's health through practical, data-driven insights and innovative wearable technologies.</p>
+                <div class="section-header">
+                    <h2 class="section-title">About <span>Holland Neurotech</span></h2>
+                    <p class="section-subtitle">At Holland Neurotech Inc., we are driven by the vision to pioneer advanced technologies that bridge advancements in neurotech with everyday health management.</p>
+                </div>
+                
+                <div class="features-grid" style="margin-top: 3rem;">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h3 class="feature-title">What is Neurotech?</h3>
+                        <p class="feature-desc">Neurotechnology encompasses technological solutions designed to understand, enhance, and interface with the nervous system. We harness this technology to develop wearables that improve women's health and promote longevity.</p>
+                        <a href="#neurotech-explained" class="feature-link">Learn more <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-female"></i>
+                        </div>
+                        <h3 class="feature-title">Women's Health Focus</h3>
+                        <p class="feature-desc">Our applications integrate insights from brain and body interactions to offer personalized health management strategies tailored to women's unique physiological needs across different life stages.</p>
+                        <a href="#our-philosophy" class="feature-link">Our approach <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <h3 class="feature-title">Innovative Solutions</h3>
+                        <p class="feature-desc">By blending cutting-edge research in neurotech with practical applications in health and wellness, we revolutionize how women interact with technology to manage their health and enhance well-being.</p>
+                        <a href="#projects" class="feature-link">See our projects <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section id="neurotech-explained" class="py-5">
+        <!-- Neurotech Explained Section -->
+        <section id="neurotech-explained" class="app-showcase">
             <div class="container">
-                <h2>What is Neurotech?</h2>
-                <p>Neurotechnology encompasses a broad range of technological solutions designed to understand, enhance, and interface with the nervous system. At Holland Neurotech Inc., we harness this technology to develop wearables that not only track but actively improve women's health and promote longevity.</p>
-                <p>Our applications of neurotech go beyond simple health monitoring. They integrate deep insights from brain and body interactions to offer personalized health management strategies tailored to women's unique physiological needs across different life stages. This includes innovative approaches to managing menstrual health, pregnancy, and menopause, ensuring that our users can achieve optimal health outcomes.</p>
-                <p>By blending cutting-edge research in neurotech with practical applications in health and wellness, we aim to revolutionize how women interact with technology to manage their health, enhance well-being, and extend healthy lifespan.</p>
-            </div>
-        </section>
-
-
-        <section id="our-philosophy" class="py-5 bg-light">
-            <div class="container">
-                <h2>Our Philosophy</h2>
-                <p>When I was studying Clinical Neuroscience, it occurred to me that many neurological disorders are incurable but can have their likelihood significantly reduced with appropriate preventative health practices. This is maximised for women's health, where current health systems already bias towards men in our understanding of symptoms, diagnostics, and treatments. Holland Neurotech aims to focus on these areas often overlooked and underserved by mainstream technology.</p>
-                <p>As many in health have experienced, this sent me down a rabbit hole of learning and experimenting with different tech. Frustrated by the lack of systems that met my needs or the needs of women like me, I realised that the tools we use must evolve. They can't just gather data- they need to also have female-specific algorithms, and communicate the data relevant for women in ways that are actionable and simple to understand.</p>
-                <p>Thus, Holland Neurotech's flagship product Go Go GAIA was born—from a need to fill this void, providing women with a platform that respects and addresses their unique health challenges. I'm committed to continually refining GAIA, enhancing it with the most recent research findings, and incorporating cutting-edge sensors to help you maintain control over your health.</p>
-
-            </div>
-        </section>
-
-
-        <section id="projects" class="section projects">
-            <div class="container">
-                <h2>Our Projects</h2>
-                <div class="row g-4">
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="images/app-store-iphone 5.5_ (1).png" class="card-img-top" alt="Project 1">
-                            <div class="card-body">
-                                <h5 class="card-title">Go Go GAIA</h5>
-                                <p class="card-text">A flagship health management platform that integrates with your wearables to provide a holistic view of your health. From menstrual cycle tracking to mood and activity insights, Go Go GAIA helps you understand and manage your well-being effectively.</p>
-                                <a href="https://apps.apple.com/ca/app/go-go-gaia/id6608432371" class="btn btn-outline-primary">Check it out for iOS!</a>
+                <div class="showcase-content" style="margin-top: 2rem;">
+                    <div class="showcase-text">
+                        <h2 class="showcase-title">What is Neurotech?</h2>
+                        <p class="showcase-subtitle">Neurotechnology encompasses a broad range of technological solutions designed to understand, enhance, and interface with the nervous system.</p>
+                        
+                        <div class="showcase-features">
+                            <div class="showcase-feature">
+                                <div class="showcase-feature-icon">
+                                    <i class="fas fa-heartbeat"></i>
+                                </div>
+                                <div class="showcase-feature-text">
+                                    <h4>Beyond Simple Monitoring</h4>
+                                    <p>Our applications go beyond simple health monitoring, integrating deep insights from brain and body interactions.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="showcase-feature">
+                                <div class="showcase-feature-icon">
+                                    <i class="fas fa-venus"></i>
+                                </div>
+                                <div class="showcase-feature-text">
+                                    <h4>Women's Health Focus</h4>
+                                    <p>We offer personalized health management strategies tailored to women's unique physiological needs across different life stages.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="showcase-feature">
+                                <div class="showcase-feature-icon">
+                                    <i class="fas fa-chart-line"></i>
+                                </div>
+                                <div class="showcase-feature-text">
+                                    <h4>Data-Driven Insights</h4>
+                                    <p>Our innovative approaches to managing menstrual health, pregnancy, and menopause ensure optimal health outcomes.</p>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="images/Screenshot 2024-12-22 at 11.47.47.png" class="card-img-top" alt="Project 2">
-                            <div class="card-body">
-                                <h5 class="card-title">Neurotech Nerds' Nexus</h5>
-                                <p class="card-text">Your premier source for the latest trends and research in neurotechnology. Join our community of enthusiasts and professionals to stay at the forefront of this rapidly evolving field.</p>
-                                <a href="https://neurotechnerd.substack.com/" class="btn btn-outline-primary">Subscribe Now</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-4">
-                        <div class="card">
-                            <img src="images/Screenshot 2024-12-22 at 11.55.41.png" class="card-img-top" alt="Project 3">
-                            <div class="card-body">
-                                <h5 class="card-title">Want To Learn More About Neurotech?</h5>
-                                <p class="card-text">Book an intro call with me to learn more about how neurotech is impacting industry! Let's chat about how Holland Neurotech can help your business, and keep you informed on the latest trends and research in neurotech.</p>
-                                <a href="https://meetings-eu1.hubspot.com/abigail-holland" class="btn btn-outline-primary">Book A Call</a>
-                            </div>
+                    
+                    <div class="showcase-images">
+                        <div class="phone-screenshots">
+                            <img src="images/app-store-iphone 5.5_ (2).png" alt="App Screenshot 1" class="phone-screenshot">
+                            <img src="images/app-store-iphone 5.5_ (4).png" alt="App Screenshot 2" class="phone-screenshot">
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="events" class="py-5">
+        <!-- Our Philosophy Section -->
+        <section id="our-philosophy" class="testimonials">
             <div class="container">
-                <h2>Upcoming Events</h2>
-                <p>Stay tuned for upcoming conferences, workshops, and speaking engagements where you can meet us and learn more about the cutting-edge of neurotech and women's health. No events currently scheduled? <a href="contact.html">Contact us</a> and let us know where you think we should appear next!</p>
+                <div class="section-header">
+                    <h2 class="section-title">Our <span>Philosophy</span></h2>
+                    <p class="section-subtitle">A personal journey that led to creating innovative solutions for women's health.</p>
+                </div>
+                
+                <div class="testimonial-grid" style="margin-top: 3rem;">
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            When I was studying Clinical Neuroscience, it occurred to me that many neurological disorders are incurable but can have their likelihood significantly reduced with appropriate preventative health practices. This is maximised for women's health, where current health systems already bias towards men in our understanding of symptoms, diagnostics, and treatments.
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            As many in health have experienced, this sent me down a rabbit hole of learning and experimenting with different tech. Frustrated by the lack of systems that met my needs or the needs of women like me, I realised that the tools we use must evolve.
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-text">
+                            Thus, Holland Neurotech's flagship product Go Go GAIA was born—from a need to fill this void, providing women with a platform that respects and addresses their unique health challenges. I'm committed to continually refining GAIA with the most recent research findings.
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Substack Subscription Section -->
-        <section class="section subscribe-section" style="background-color: #e0f7fa;">
-            <div class="container text-center">
-                <h2>Stay Updated with Our Newsletter</h2>
-                <p>Subscribe to our Substack for the latest insights in neurotechnology and women's health.</p>
-                <a href="https://neurotechnerd.substack.com/" class="btn-primary">Subscribe Now</a>
+        <!-- Projects Section -->
+        <section id="projects" class="app-features">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our <span>Projects</span></h2>
+                    <p class="section-subtitle">Explore our innovative solutions in neurotechnology and women's health.</p>
+                </div>
+                
+                <div class="features-content" style="margin-top: 4rem;">
+                    <div class="feature-phone">
+                        <img src="images/app-store-iphone 5.5_ (1).png" alt="Go Go GAIA App">
+                    </div>
+                    
+                    <div class="features-list">
+                        <div class="feature-item" style="margin-bottom: 3rem;">
+                            <h3 class="feature-item-title">
+                                <i class="fas fa-mobile-alt"></i>
+                                Go Go GAIA
+                            </h3>
+                            <p>A flagship health management platform that integrates with your wearables to provide a holistic view of your health. From menstrual cycle tracking to mood and activity insights, Go Go GAIA helps you understand and manage your well-being effectively.</p>
+                            <a href="https://apps.apple.com/ca/app/go-go-gaia/id6608432371" class="btn" style="margin-top: 15px;">Download for iOS</a>
+                        </div>
+                        
+                        <div class="feature-item" style="margin-bottom: 3rem;">
+                            <h3 class="feature-item-title">
+                                <i class="fas fa-newspaper"></i>
+                                Neurotech Nerds' Nexus
+                            </h3>
+                            <p>Your premier source for the latest trends and research in neurotechnology. Join our community of enthusiasts and professionals to stay at the forefront of this rapidly evolving field.</p>
+                            <a href="https://neurotechnerd.substack.com/" class="btn" style="margin-top: 15px;">Subscribe Now</a>
+                        </div>
+                        
+                        <div class="feature-item">
+                            <h3 class="feature-item-title">
+                                <i class="fas fa-building"></i>
+                                Neurotech Company Directory
+                            </h3>
+                            <p>A comprehensive directory of companies in the neurotechnology space, helping you discover and connect with innovative organizations in this growing field.</p>
+                            <a href="directory.html" class="btn" style="margin-top: 15px;">Explore Directory</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- App Download Section -->
-        <section class="section download-section" style="background-color: #ffe0b2;">
-            <div class="container text-center">
-                <h2>Download Our App</h2>
-                <p>Get the Go Go Gaia app for a holistic view of your health. Available on iOS!</p>
-                <a href="https://apps.apple.com/ca/app/go-go-gaia/id6608432371" class="btn-primary">Download Now</a>
+        <!-- Services Section -->
+        <section id="services" class="pricing">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our <span>Services</span></h2>
+                    <p class="section-subtitle">Leverage our expertise in neurotechnology and women's health for your business needs.</p>
+                </div>
+                
+                <div class="pricing-grid" style="margin-top: 3rem;">
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="pricing-name">Speaking & Workshops</h3>
+                            <p class="pricing-description">Engaging presentations and workshops on neurotechnology and women's health.</p>
+                        </div>
+                        <div class="pricing-body">
+                            <ul class="pricing-features">
+                                <li class="pricing-feature">
+                                    <i class="fas fa-check"></i>
+                                    Conference keynotes
+                                </li>
+                                <li class="pricing-feature">
+                                    <i class="fas fa-check"></i>
+                                    Educational workshops
+                                </li>
+                                <li class="pricing-feature">
+                                    <i class="fas fa-check"></i>
+                                    Corporate training
+                                </li>
+                                <li class="pricing-feature">
+                                    <i class="fas fa-check"></i>
+                                    Panel discussions
+                                </li>
+                            </ul>
+                            <a href="https://meetings-eu1.hubspot.com/abigail-holland" class="btn pricing-cta">Book a Speaker</a>
+                        </div>
+                    </div>
+                    
+                    <div class="pricing-card popular">
+                        <div class="popular-badge">Most Popular</div>
+                        <div class="pricing-header">
+                            <h3 class="pricing-name">Neurotech Consulting</h3>
+                            <p class="pricing-description">Expert guidance on neurotechnology applications for your business or research.</p>
+                        </div>
+                        <div class="pricing-body">
+                            <ul class="pricing-features">
+                                <li class="pricing-feature">
+                                    <i class="fas fa-check"></i>
+                                    Industry trend analysis
+                                </li>
+                                <li class="pricing-feature">
+                                    <i class="fas fa-check"></i>
+                                    Technology assessment
+                                </li>
+                                <li class="pricing-feature">
+                                    <i class="fas fa-check"></i>
+                                    Implementation strategies
+                                </li>
+                                <li class="pricing-feature">
+                                    <i class="fas fa-check"></i>
+                                    Research insights
+                                </li>
+                            </ul>
+                            <a href="https://meetings-eu1.hubspot.com/abigail-holland" class="btn pricing-cta">Book a Consultation</a>
+                        </div>
+                    </div>
+                    
+                    <div class="pricing-card">
+                        <div class="pricing-header">
+                            <h3 class="pricing-name">Women's Health Tech Development</h3>
+                            <p class="pricing-description">Custom development services for women's health technology solutions.</p>
+                        </div>
+                        <div class="pricing-body">
+                            <ul class="pricing-features">
+                                <li class="pricing-feature">
+                                    <i class="fas fa-check"></i>
+                                    Custom app development
+                                </li>
+                                <li class="pricing-feature">
+                                    <i class="fas fa-check"></i>
+                                    Wearable integration
+                                </li>
+                                <li class="pricing-feature">
+                                    <i class="fas fa-check"></i>
+                                    Health algorithm design
+                                </li>
+                                <li class="pricing-feature">
+                                    <i class="fas fa-check"></i>
+                                    User experience optimization
+                                </li>
+                            </ul>
+                            <a href="contact.html" class="btn pricing-cta">Get in Touch</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to transform women's health with neurotechnology?</h2>
+                    <p class="cta-subtitle">Download our app, subscribe to our newsletter, or get in touch to discuss how we can work together.</p>
+                    <div class="cta-buttons">
+                        <a href="https://apps.apple.com/ca/app/go-go-gaia/id6608432371" class="store-button">
+                            <div class="store-icon">
+                                <i class="fab fa-apple"></i>
+                            </div>
+                            <div class="store-text">
+                                <small>Download on the</small>
+                                <strong>App Store</strong>
+                            </div>
+                        </a>
+                        <a href="https://neurotechnerd.substack.com/" class="store-button">
+                            <div class="store-icon">
+                                <i class="fas fa-newspaper"></i>
+                            </div>
+                            <div class="store-text">
+                                <small>Subscribe to</small>
+                                <strong>Our Newsletter</strong>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Holland Neurotech Inc. All rights reserved.</p>
-            <a href="privacy-policy.html">Privacy Policy</a>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">H</div>
+                        <span>Holland</span> Neurotech
+                    </a>
+                    <p>A Canadian-based company pioneering advanced technologies that bridge neuroscience with women's health management through practical, data-driven insights.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links-column">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#projects">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-column">
+                    <h4 class="footer-heading">Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://gaia-health.github.io/">Go Go GAIA</a></li>
+                        <li><a href="https://neurotechnerd.substack.com/">Neurotech Nerds' Nexus</a></li>
+                        <li><a href="directory.html">Neurotech Directory</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-column">
+                    <h4 class="footer-heading">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Holland Neurotech Inc. All rights reserved.</p>
+                <div class="footer-links-bottom">
+                    <a href="privacy-policy.html">Privacy</a>
+                    <a href="terms-and-conditions.html">Terms</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <!-- JavaScript for mobile menu toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const navLinks = document.querySelector('.nav-links');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>

@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact - Holland Neurotech Inc.</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="flourish_css.css">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-ER3N9QY7E1"></script>
@@ -16,25 +17,138 @@
 
     gtag('config', 'G-ER3N9QY7E1');
     </script>
+    
+    <style>
+        .contact-form {
+            max-width: 600px;
+            margin: 2rem auto;
+        }
+        
+        .form-group {
+            margin-bottom: 1.5rem;
+        }
+        
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+        
+        .form-group input,
+        .form-group textarea {
+            width: 100%;
+            padding: 0.875rem 1rem;
+            border: 1px solid var(--gray-200);
+            border-radius: var(--radius);
+            background-color: var(--white);
+            font-size: 1rem;
+            transition: var(--transition);
+        }
+        
+        .form-group input:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: var(--primary);
+            box-shadow: 0 0 0 3px rgba(156, 86, 194, 0.2);
+        }
+        
+        .contact-details {
+            margin-top: 3rem;
+            text-align: center;
+        }
+        
+        .contact-details a {
+            color: var(--primary);
+            text-decoration: none;
+            transition: var(--transition);
+        }
+        
+        .contact-details a:hover {
+            color: var(--primary-dark);
+        }
+        
+        .contact-methods {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+        
+        .contact-method {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+        
+        .contact-icon {
+            width: 3rem;
+            height: 3rem;
+            background-color: var(--primary-light);
+            color: var(--primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 1rem;
+            font-size: 1.25rem;
+        }
+    </style>
 </head>
 <body>
+    <!-- Header -->
     <header>
-        <nav class="container">
-            <a href="index.html">Home</a>
-            <a href="about.html">About Us</a>
-            <a href="https://gaia-health.github.io/" target="_blank">Go Go GAIA</a>
-            <a href="https://neurotechnerd.substack.com/" target="_blank">Neurotech Nerds' Nexus</a>
-            <a href="directory.html">Neurotech Company Directory</a>
-            <a href="contact.html">Contact</a>
-        </nav>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">
+                    <div class="logo-icon">H</div>
+                    <span>Holland</span> Neurotech
+                </a>
+                <div class="nav-links">
+                    <a href="index.html#about">About</a>
+                    <a href="index.html#projects">Projects</a>
+                    <a href="index.html#services">Services</a>
+                    <a href="https://gaia-health.github.io/" target="_blank">Go Go GAIA</a>
+                    <a href="directory.html">Neurotech Directory</a>
+                </div>
+                <div class="header-btns">
+                    <a href="contact.html" class="btn btn-light">Contact</a>
+                    <a href="https://apps.apple.com/ca/app/go-go-gaia/id6608432371" class="btn">Download App</a>
+                </div>
+                <button class="mobile-menu-btn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
+        </div>
     </header>
 
     <main>
-        <section class="section contact-section">
+        <!-- Hero Section -->
+        <section class="hero" style="padding-bottom: 3rem;">
             <div class="container">
-                <h2>Contact Us</h2>
-                <p>If you have any questions or want to ask about ongoing or future projects, please don't hesitate to reach out using the form below:</p>
-                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form">
+                <div class="hero-content">
+                    <div class="hero-text" style="max-width: 800px; margin: 0 auto; text-align: center;">
+                        <div class="hero-badge">
+                            <i class="fas fa-envelope"></i>
+                            Get in Touch
+                        </div>
+                        <h1 class="hero-heading">Contact Us</h1>
+                        <p class="hero-subheading">Have questions about our products or services? Our Canadian-based team would love to hear from you and discuss potential collaborations!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Form Section -->
+        <section class="app-showcase" style="background-color: var(--white);">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Send Us a <span>Message</span></h2>
+                    <p class="section-subtitle">If you have any questions about our women's health technology or neurotech consulting services, please don't hesitate to reach out.</p>
+                </div>
+                
+                <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST" class="contact-form" style="margin: 3rem auto;">
                     <div class="form-group">
                         <label for="name">Name:</label>
                         <input type="text" id="name" name="name" required>
@@ -44,23 +158,142 @@
                         <input type="email" id="email" name="email" required>
                     </div>
                     <div class="form-group">
+                        <label for="subject">Subject:</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    <div class="form-group">
                         <label for="message">Message:</label>
                         <textarea id="message" name="message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn">Submit</button>
+                    <button type="submit" class="btn" style="width: 100%;">Submit Message</button>
                 </form>
+                
                 <div class="contact-details">
-                    <p>Alternatively, you can contact us at:</p>
-                    <p><strong>Email:</strong> <a href="mailto:support@hollandneurotech.com">support@hollandneurotech.com</a></p>
+                    <h3 style="margin-bottom: 2rem;">Other Ways to Reach Us</h3>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <h4>Email</h4>
+                            <a href="mailto:support@hollandneurotech.com">support@hollandneurotech.com</a>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-calendar-check"></i>
+                            </div>
+                            <h4>Schedule a Call</h4>
+                            <a href="https://meetings-eu1.hubspot.com/abigail-holland">Book a Meeting</a>
+                        </div>
+                        <div class="contact-method">
+                            <div class="contact-icon">
+                                <i class="fas fa-comment-alt"></i>
+                            </div>
+                            <h4>Social Media</h4>
+                            <p>Connect with us on social media</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2 class="cta-title">Ready to transform women's health with neurotechnology?</h2>
+                    <p class="cta-subtitle">Download our app, subscribe to our newsletter, or get in touch to discuss how we can work together.</p>
+                    <div class="cta-buttons">
+                        <a href="https://apps.apple.com/ca/app/go-go-gaia/id6608432371" class="store-button">
+                            <div class="store-icon">
+                                <i class="fab fa-apple"></i>
+                            </div>
+                            <div class="store-text">
+                                <small>Download on the</small>
+                                <strong>App Store</strong>
+                            </div>
+                        </a>
+                        <a href="https://neurotechnerd.substack.com/" class="store-button">
+                            <div class="store-icon">
+                                <i class="fas fa-newspaper"></i>
+                            </div>
+                            <div class="store-text">
+                                <small>Subscribe to</small>
+                                <strong>Our Newsletter</strong>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
+    <!-- Footer -->
     <footer>
         <div class="container">
-            <p>&copy; 2024 Holland Neurotech Inc. All rights reserved.</p>
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="index.html" class="logo">
+                        <div class="logo-icon">H</div>
+                        <span>Holland</span> Neurotech
+                    </a>
+                    <p>A Canadian-based company pioneering advanced technologies that bridge neuroscience with women's health management through practical, data-driven insights.</p>
+                    <div class="footer-social">
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-links-column">
+                    <h4 class="footer-heading">Company</h4>
+                    <ul class="footer-links">
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="index.html#services">Services</a></li>
+                        <li><a href="index.html#projects">Projects</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-column">
+                    <h4 class="footer-heading">Products</h4>
+                    <ul class="footer-links">
+                        <li><a href="https://gaia-health.github.io/">Go Go GAIA</a></li>
+                        <li><a href="https://neurotechnerd.substack.com/">Neurotech Nerds' Nexus</a></li>
+                        <li><a href="directory.html">Neurotech Directory</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-links-column">
+                    <h4 class="footer-heading">Legal</h4>
+                    <ul class="footer-links">
+                        <li><a href="privacy-policy.html">Privacy Policy</a></li>
+                        <li><a href="terms-and-conditions.html">Terms & Conditions</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Holland Neurotech Inc. All rights reserved.</p>
+                <div class="footer-links-bottom">
+                    <a href="privacy-policy.html">Privacy</a>
+                    <a href="terms-and-conditions.html">Terms</a>
+                    <a href="contact.html">Contact</a>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <!-- JavaScript for mobile menu toggle -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+            const navLinks = document.querySelector('.nav-links');
+            
+            mobileMenuBtn.addEventListener('click', function() {
+                navLinks.classList.toggle('active');
+            });
+        });
+    </script>
 </body>
 </html>

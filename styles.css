@@ -282,3 +282,12 @@ header .btn-primary {
     background-color: #6f42c1; /* Purple color */
     color: #fff;
 }
+
+/* Manifesto Section */
+.manifesto-section {
+    background-color: #F2F4FF; /* Ghost White */
+    color: #323232; /* Maintaining the sophisticated dark grey text color */
+    padding: 40px 0;
+    font-size: 20px; /* Increasing the font size for better readability */
+    font-family: 'Open Sans', sans-serif;
+}
