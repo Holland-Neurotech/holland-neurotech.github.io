@@ -56,7 +56,7 @@
         <section class="section">
             <div class="container">
                 <h2>Privacy Policy</h2>
-                <p>Last updated: August 7, 2024</p>
+                <p>Last updated: May 14, 2025</p>
 
                 <h3>Introduction</h3>
                 <p>Welcome to Go Go GAIA, a health management app developed by Holland Neurotech Inc. This Privacy Policy explains how we collect, use, and protect your information when you use our app and services.</p>
@@ -64,9 +64,13 @@
                 <h3>1. Information We Collect</h3>
                 <p>We only collect and store data that you manually log into the app. This includes:</p>
                 <ul>
-                    <li>Personal Identification Information: such as your email address used for login and authentication purposes, stored securely in Firebase.</li>
-                    <li>Health Data: such as sleep patterns, mood fluctuations, menstrual cycles, blood sugar levels, and any other health-related information you manually log, stored in AWS.</li>
+                    <li>Personal Identification Information: such as your email address used for login and authentication purposes.</li>
+                    <li>Health Data: such as sleep patterns, mood fluctuations, menstrual cycles, blood sugar levels, and any other health-related information you manually log.</li>
                 </ul>
+                <p>Importantly, we store these two types of data separately to make it harder to link the two types of data together.</p>
+                <p>For some of our more intensive algorithms, we may also store data that is not directly entered by you, such as your Apple Health data. In these cases, we will always ask for your permission first.</p>
+
+
 
                 <h3>2. How We Collect Information</h3>
                 <p>We collect information in the following ways:</p>
@@ -75,23 +79,40 @@
                     <li>Wearable and Apple Health Data: Accessed directly from your device but not stored or transmitted through our API.</li>
                 </ul>
 
-                <h3>3. How We Use Your Information</h3>
-                <p>We use the information we collect to:</p>
+                <h3>3. AI Insights and Health Data</h3>
+                <p>We offer an optional AI feature, which uses artificial intelligence (AI) to analyze your logged health data and provide personalized insights.</p>
+
+                <h4>What We Analyze</h4>
+                <p>If you enable this feature, you can leverage your data to have AI analyze:</p>
                 <ul>
-                    <li>Provide and maintain the app.</li>
-                    <li>Personalize your user experience based on the data you enter.</li>
-                    <li>Improve the app based on user feedback and logged data.</li>
-                    <li>Communicate with you for support and updates.</li>
+                    <li>Symptoms, moods, and written notes</li>
+                    <li>Nutrition and hydration logs</li>
+                    <li>Menstrual and cycle tracking data</li>
+                    <li>Wearable data (e.g. heart rate, HRV, sleep)</li>
+                    <li>Exercise and recovery patterns</li>
                 </ul>
 
-                <h3>4. How We Share Your Information</h3>
-                <p>We do not share your data with any third parties. Your data is stored securely, and access is limited to necessary personnel only.</p>
+                <h4>How It Works</h4>
+                <p>When you request an insight, both your submitted input and the AI-generated response are saved in your account. You can view or delete past insights at any time from within the app.</p>
+
+                <p>We do not attach your name, email, or identifying details to the data sent for AI processing. However, we do not actively remove any identifying information you may include in your written notes or logs. Please avoid entering sensitive personal identifiers when using this feature.</p>
+
+                <h4>Not Medical Advice</h4>
+                <p>AI insights are not medical advice and should not be used for diagnosis or treatment. They are based on your personal data and general health principles. Always consult a medical professional for health concerns.</p>
+
+                <h4>Consent and Control</h4>
+                <p>Your consent is logged securely in our system. We store your user ID, the time of consent, and the version of this privacy policy you agreed to. To withdraw consent, email us at support@hollandneurotech.com.</p>
+
+                <p>These features are not intended to diagnose, treat, or cure any medical condition. They are for informational purposes only and should not replace medical consultation.</p>
+
+                <h3>4. Data Sharing & AI Processing</h3>
+                <p>We do not share your data with any third parties. Your data is stored securely, and access is limited to necessary personnel only. When you enable AI insights, your health data is analyzed securely using a third-party AI service. No additional identifying information, other than what you select to send, is shared with the model provider.</p>
 
                 <h3>5. Data Security</h3>
-                <p>We take the security of your data seriously. Your email address used for login is stored in Firebase, while your health data is stored in AWS. Only someone with access to both databases could link the two, ensuring an additional layer of security.</p>
+                <p>All health data and AI insights are stored on secure servers located in Europe, with strict access controls and encrypted communication.</p>
 
                 <h3>6. Data Retention</h3>
-                <p>We retain your data as long as you maintain an account with us. If you choose to delete your account, your data will be permanently deleted from our servers.</p>
+                <p>AI-generated insights are stored in your account for your personal review. You can delete individual insights or your entire account at any time. If you withdraw consent, no new insights will be generated, but existing ones remain until manually deleted.</p>
 
                 <h3>7. Your Data Protection Rights</h3>
                 <p>You have the following rights regarding your data:</p>
@@ -116,7 +137,7 @@
 
     <footer>
         <div class="container">
-            <p>&copy; 2024 Holland Neurotech Inc. All rights reserved.</p>
+            <p>&copy; 2025 Holland Neurotech Inc. All rights reserved.</p>
             <a href="privacy-policy.html">Privacy Policy</a>
         </div>
     </footer>
