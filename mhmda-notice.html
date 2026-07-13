@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Consumer Health Data Privacy Notice - Go Go Gaia</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .section {
+            padding: 60px 20px;
+            flex-grow: 1;
+            background-color: #f2f4ff;
+            text-align: left;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #120f26;
+            text-align: center;
+        }
+
+        .section p, .section ul {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .section ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            color: #333;
+        }
+
+        .hipaa-notice {
+            background: #e8eaf6;
+            border-left: 4px solid #5c6bc0;
+            padding: 16px 20px;
+            border-radius: 8px;
+            margin-bottom: 24px;
+        }
+
+        .hipaa-notice p {
+            margin-bottom: 8px;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="https://gaia-health.github.io/" target="_blank">Go Go GAIA</a>
+            <a href="https://neurotechnerd.substack.com/" target="_blank">Neurotech Nerds' Nexus</a>
+            <a href="directory.html">Neurotech Company Directory</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2>Consumer Health Data Privacy Notice</h2>
+                <p><strong>Version 1.3 &mdash; effective July 13, 2026</strong></p>
+
+                <div class="hipaa-notice">
+                    <p>This notice is provided under Washington State's My Health My Data Act (MHMDA). We publish it as its own page, separate from our main <a href="privacy-policy.html">Privacy Policy</a>, so it's easy to find and read on its own. Questions: <a href="mailto:privacy@go-go-gaia.com">privacy@go-go-gaia.com</a>.</p>
+                </div>
+
+                <h3>What &ldquo;consumer health data&rdquo; means</h3>
+                <p>MHMDA defines consumer health data broadly: personal information that identifies a consumer's past, present, or future physical or mental health status, and that isn't otherwise regulated under health-privacy laws like HIPAA. Because Go Go Gaia is a health-tracking app, nearly everything we collect falls into this category.</p>
+
+                <h3>Categories of consumer health data we collect</h3>
+                <ul>
+                    <li><strong>Cycle &amp; reproductive data</strong> &mdash; period dates, flow, cycle length, fertility signals (BBT, cervical mucus, ovulation tests), pregnancy status and gestational data, birth control type and usage, hormone levels, PCOS and IVF journey data, menopause stage and HRT status</li>
+                    <li><strong>Biometric &amp; vital sign data</strong> &mdash; heart rate and HRV, blood pressure, SpO2, respiratory rate, body temperature, VO2 max, glucose, weight, body composition</li>
+                    <li><strong>Lab results</strong> &mdash; bloodwork values extracted from uploaded lab PDFs, with reference ranges and interpretations</li>
+                    <li><strong>Mood &amp; mental wellness data</strong> &mdash; mood and symptom logs, stress and anxiety indicators</li>
+                    <li><strong>Medication &amp; treatment data</strong> &mdash; medications, dosages, adherence, side effects, supplement prescriptions, linked health conditions</li>
+                    <li><strong>Fitness, nutrition &amp; sleep data</strong> &mdash; workouts, meal logs, hydration, sleep sessions and stages</li>
+                    <li><strong>AI conversation data</strong> &mdash; your conversations with Delphi, and vision analysis results from meal or lab photos you choose to upload</li>
+                </ul>
+                <p>We do not collect precise geolocation data.</p>
+
+                <h3>Why we collect and use it</h3>
+                <ul>
+                    <li>To provide the core app: tracking, dashboards, health scores, and predictions</li>
+                    <li>To generate optional AI-powered insights and vision analysis, via Google Gemini (Vertex AI) under a Data Processing Agreement</li>
+                    <li>To enable care coordination with healthcare professionals you explicitly connect with and authorize</li>
+                    <li>To improve the app using de-identified, aggregated statistics, computed over groups of at least 100 members</li>
+                    <li>With your separate, explicit opt-in only: to train Gaia's own AI models</li>
+                    <li>For security, fraud prevention, and legal compliance</li>
+                </ul>
+
+                <h3>Where it comes from</h3>
+                <ul>
+                    <li>Directly from you &mdash; what you manually log, upload, or type into the app, including conversations with Delphi</li>
+                    <li>From Apple HealthKit, with your permission, including data your connected wearables (Apple Watch, Oura, Whoop, Garmin, Eight Sleep, and similar) have written to HealthKit</li>
+                    <li>Generated by us &mdash; scores, predictions, and AI-derived insights based on the data above</li>
+                </ul>
+
+                <h3>Who we share it with</h3>
+                <p><strong>We do not sell consumer health data.</strong> We use a small number of service providers who process data only on our instructions, to run Gaia, under contract:</p>
+                <ul>
+                    <li><strong>Google Cloud (Vertex AI / Gemini)</strong> &mdash; AI conversations and vision analysis, under a Data Processing Agreement</li>
+                    <li><strong>Amazon Web Services (AWS)</strong> &mdash; database and file hosting, Stockholm region (eu-north-1), within the EU</li>
+                    <li><strong>Google Cloud / Firebase</strong> &mdash; authentication only (email, password hashes, tokens); no health data</li>
+                    <li><strong>Fullscript</strong> &mdash; supplement prescriptions, only when a practitioner prescribes</li>
+                    <li><strong>Sentry</strong> &mdash; error monitoring, with health data scrubbed from reports before transmission</li>
+                </ul>
+                <p>We also share data with healthcare professionals you explicitly connect with, per the categories you authorize, and as required by law (see our Privacy Policy for our law-enforcement request stance). Helping improve Gaia's own AI models under the separate opt-in described below is not a sale or sharing of your data to any outside party &mdash; it stays inside Go Go Gaia.</p>
+
+                <h3>Your rights under MHMDA</h3>
+                <ul>
+                    <li><strong>Right to confirm and access</strong> &mdash; confirm whether we are collecting, sharing, or selling your consumer health data, and access it (also available anytime via Settings &gt; Download My Data)</li>
+                    <li><strong>Right to withdraw consent</strong> &mdash; withdraw your consent for the collection or processing of your consumer health data at any time</li>
+                    <li><strong>Right to delete</strong> &mdash; have your consumer health data deleted</li>
+                    <li><strong>Right to appeal</strong> &mdash; appeal a denial of any of the above requests</li>
+                </ul>
+                <p>To exercise any of these rights, email <a href="mailto:privacy@go-go-gaia.com">privacy@go-go-gaia.com</a>. We aim to respond within 45 days. If we deny your request, you may appeal by replying to our decision; we will respond to the appeal within 45 days. If we uphold the denial, we will explain why and how you may contact the Washington State Attorney General.</p>
+
+                <h3>Non-discrimination</h3>
+                <p>We will not deny you goods or services, charge you a different price, or provide a different level of service because you exercised any right under this notice.</p>
+
+                <h3>Changes to this notice</h3>
+                <p>We may update this notice periodically. We will update the version and effective date above, and, where required, notify you directly of material changes.</p>
+
+                <h3>Contact</h3>
+                <p>Go Go Gaia, operated by Holland Neurotech Inc.</p>
+                <p>Privacy Contact: Abby Holland &mdash; <a href="mailto:privacy@go-go-gaia.com">privacy@go-go-gaia.com</a></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Holland Neurotech Inc. All rights reserved.</p>
+            <a href="privacy-policy.html">Privacy Policy</a> |
+            <a href="terms-and-conditions.html">Terms &amp; Conditions</a> |
+            <a href="ai-insights-terms.html">AI Insights Terms</a> |
+            <a href="mhmda-notice.html">Consumer Health Data Notice</a>
+        </div>
+    </footer>
+</body>
+</html>

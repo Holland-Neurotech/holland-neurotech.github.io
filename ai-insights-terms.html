@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Insights Terms - Go Go Gaia</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .section {
+            padding: 60px 20px;
+            flex-grow: 1;
+            background-color: #f2f4ff;
+            text-align: left;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .section h2 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            color: #120f26;
+            text-align: center;
+        }
+
+        .section p, .section ul {
+            font-size: 1.1rem;
+            color: #333;
+            margin-bottom: 20px;
+        }
+
+        .section ul {
+            list-style-type: disc;
+            margin-left: 20px;
+            color: #333;
+        }
+
+        .hipaa-notice {
+            background: #e8eaf6;
+            border-left: 4px solid #5c6bc0;
+            padding: 16px 20px;
+            border-radius: 8px;
+            margin-bottom: 24px;
+        }
+
+        .hipaa-notice p {
+            margin-bottom: 8px;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="https://gaia-health.github.io/" target="_blank">Go Go GAIA</a>
+            <a href="https://neurotechnerd.substack.com/" target="_blank">Neurotech Nerds' Nexus</a>
+            <a href="directory.html">Neurotech Company Directory</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <h2>AI Insights Terms</h2>
+                <p><strong>Version 1.3 &mdash; effective July 13, 2026</strong></p>
+
+                <div class="hipaa-notice">
+                    <p>Gaia has optional AI features. Here's exactly what they do with your data, in plain terms. This page is drawn from, and consistent with, our full <a href="privacy-policy.html">Privacy Policy</a>. If anything is unclear, email <a href="mailto:privacy@go-go-gaia.com">privacy@go-go-gaia.com</a> and we'll walk you through it.</p>
+                </div>
+
+                <h3>What the AI features are</h3>
+                <p>Gaia's AI features are Delphi (the in-app health chat) and vision analysis (reading meal photos and lab result photos you choose to upload). They help you understand your own data. They are entirely optional, and you can turn them on or off at any time.</p>
+
+                <h3>How your insights are generated</h3>
+                <p>When you ask for an insight, your relevant health data is sent to Google Gemini (via Vertex AI), which generates the answer and returns it to you. This is covered by a Data Processing Agreement with Google Cloud that forbids Google from using your data for anything other than generating your result. Google does not train its own models on your data, and this step does not train ours either. We do not attach your name or email to what is sent.</p>
+                <p>Your conversations and the AI's responses are saved in your account so you can revisit them. You can view or delete past insights any time in the app.</p>
+
+                <h3>AI insights are not medical advice</h3>
+                <p>Gaia is a wellness app, not a medical device, and its AI is not a doctor. Delphi and vision analysis help you notice patterns and prepare good questions, not diagnose you or replace professional care. Anything the AI surfaces is a starting point for a conversation with a qualified provider, not a verdict.</p>
+
+                <h3>Helping improve Gaia's own AI models (separate, and optional)</h3>
+                <p>This is a different thing from the above, and it only happens if you choose it.</p>
+                <p>Separately from generating your insights, you can opt in to let us use your data to train and improve <strong>Gaia's own</strong> internal AI models &mdash; including a foundation model that may power future features &mdash; via the toggle called &ldquo;Help Improve Gaia's AI Models&rdquo; at sign-up or in Settings. This is how the app gets smarter and more personal over time.</p>
+                <ul>
+                    <li>It is <strong>off by default.</strong> Nothing is used for training unless you turn it on.</li>
+                    <li>It can use individual-level data, not only de-identified aggregate statistics, which is why we ask for it separately and clearly.</li>
+                    <li>We never sell this data and never share it outside Go Go Gaia. We don't attach your name or email to data used for training, and we take steps to reduce the chance a trained model could reproduce any individual's data.</li>
+                    <li>You can withdraw any time in Settings. We stop using your data for future training immediately. Data already incorporated into a model before you withdraw cannot always be removed from that model, but no future training will use your data.</li>
+                    <li>Turning it off does not affect your access to any part of the app.</li>
+                </ul>
+
+                <h3>Your consent and control</h3>
+                <ul>
+                    <li>Your consent for each AI feature is logged securely with a timestamp and the policy version, so there's a clear record of what you agreed to and when.</li>
+                    <li>The two consents above are independent: you can use AI insights without helping train our models, and vice versa.</li>
+                    <li>Withdraw either one any time in Settings, or email <a href="mailto:privacy@go-go-gaia.com">privacy@go-go-gaia.com</a>.</li>
+                </ul>
+
+                <h3>Questions</h3>
+                <p>For anything about your data or these terms, contact our Privacy Contact, Abby Holland, at <a href="mailto:privacy@go-go-gaia.com">privacy@go-go-gaia.com</a>. For the full detail on how we collect, use, share, and protect your information, see our <a href="privacy-policy.html">Privacy Policy</a> and <a href="terms-and-conditions.html">Terms &amp; Conditions</a>.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Holland Neurotech Inc. All rights reserved.</p>
+            <a href="privacy-policy.html">Privacy Policy</a> |
+            <a href="terms-and-conditions.html">Terms &amp; Conditions</a> |
+            <a href="ai-insights-terms.html">AI Insights Terms</a> |
+            <a href="mhmda-notice.html">Consumer Health Data Notice</a>
+        </div>
+    </footer>
+</body>
+</html>
