@@ -24,7 +24,7 @@ section{margin-top:4rem}
 .hero{display:grid;grid-template-columns:1fr;gap:1.5rem;margin-top:3rem}
 .lede{font-size:1.2rem;line-height:1.65}
 .portrait{margin:0;order:-1}
-.portrait img{display:block;width:140px;height:auto;aspect-ratio:4/5;object-fit:cover;border-radius:4px}
+.portrait img{display:block;width:112px;height:112px;object-fit:cover;border-radius:50%}
 .portrait[hidden]{display:none}
 ul{padding-left:1.2rem;margin:0 0 1.1rem}
 li{margin:.6rem 0}
@@ -37,9 +37,9 @@ li{margin:.6rem 0}
 .reading-list li{break-inside:avoid;margin:.5rem 0}
 footer{margin-top:4rem;padding-top:1.5rem;padding-bottom:3rem;border-top:1px solid var(--rule);color:var(--muted);font-size:.95rem}
 @media (min-width:760px){
-.hero{grid-template-columns:1fr 180px;gap:2.5rem;align-items:start}
+.hero{grid-template-columns:1fr 160px;gap:2.5rem;align-items:start}
 .portrait{order:0}
-.portrait img{width:180px}
+.portrait img{width:160px;height:160px}
 .hero:has(.portrait[hidden]){grid-template-columns:1fr}
 .reading-list{columns:2;column-gap:2.5rem}
 }
