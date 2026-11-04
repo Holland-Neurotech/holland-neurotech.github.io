@@ -98,3 +98,9 @@ footer{margin-top:4rem;padding-top:1.5rem;padding-bottom:3rem;border-top:1px sol
 .quiet h2::before{background:var(--rule)}
 .quiet h3{font-size:.95rem;color:var(--muted)}
 @media (prefers-reduced-motion:reduce){.covers .cover,.js .blurb.open{transition:none;animation:none}}
+
+.loopchart{max-width:600px;color:var(--accent)}
+.loopchart .loop{fill:none;stroke:var(--accent);stroke-width:1.5;opacity:.7}
+.loopchart .node{fill:var(--tint);stroke:var(--accent);stroke-width:1.2}
+.loopchart .nl{fill:var(--fg);font-size:14px;font-weight:500}
+.loopchart .ctr{fill:var(--muted);font-size:15px}
