@@ -15,7 +15,7 @@
 <meta name="twitter:description" content="Abby Holland is a biomechanical engineer and neurotech founder. She builds Go Go Gaia, a women's health app, writes about cybiosis, and lives between San Francisco, Zurich, Toronto and London.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="/styles.css">
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"Person","name":"Abby Holland","alternateName":"Abigail Holland","url":"https://hollandneurotech.com/","jobTitle":"Founder","worksFor":{"@type":"Organization","name":"Holland Neurotech Inc."},"alumniOf":[{"@type":"CollegeOrUniversity","name":"Queen's University"},{"@type":"CollegeOrUniversity","name":"University College London"}],"knowsAbout":["neurotechnology","wearables","women's health","cybiosis","EEG","biomechanical engineering"],"homeLocation":[{"@type":"Place","name":"San Francisco"},{"@type":"Place","name":"Zurich"}],"sameAs":["https://neurotechnerd.substack.com/","https://x.com/holland_neuro","https://www.linkedin.com/in/abigail-holland6/","https://apps.apple.com/ca/app/go-go-gaia/id6608432371","https://www.go-go-gaia.com/","https://www.mdpi.com/1424-8220/22/4/1568"]}
@@ -28,18 +28,32 @@
 <body>
 <nav aria-label="Sections">
 <ul>
+<li><a href="#now">now</a></li>
 <li><a href="#about">about</a></li>
 <li><a href="#work">work</a></li>
 <li><a href="#writing">writing</a></li>
 <li><a href="#cybiosis">cybiosis</a></li>
+<li><a href="#believe">what I believe</a></li>
 <li><a href="#reading">things I've read</a></li>
 <li><a href="#faq">faq</a></li>
 <li><a href="#contact">contact</a></li>
 </ul>
 </nav>
 <main>
+<header class="hero">
+<div class="hero-text">
 <h1>Abby Holland</h1>
+<p class="lede">Technology is a tool. The interesting question is how closely it fits the person using it; cybiosis is my word for that fit. My work is the data side of it: taking the signals a body already gives off through phones, wearables and sensors, and turning them into something that changes what a person does.</p>
 <p>I'm a biomechanical engineer who has been building neurotech since 2018. Right now I run Holland Neurotech, where I build Go Go Gaia, a women's health app that learns a person's patterns from the data her phone and wearables already collect. I live between San Francisco and Zurich, with Toronto and London as the other two homes.</p>
+</div>
+<!-- Photo: drop a portrait at images/abby.jpg (about 600x750, portrait). The figure hides itself if the file is missing. -->
+<figure class="portrait"><img src="images/abby.jpg" alt="Abby Holland" width="300" height="375" onerror="this.parentElement.hidden=true"></figure>
+</header>
+
+<section id="now">
+<h2>Now</h2>
+<p>I'm building Go Go Gaia full time, between San Francisco and Zurich. Open to conversations about neurotech, wearables and women's health data.</p>
+</section>
 
 <section id="about">
 <h2>About</h2>
@@ -51,14 +65,14 @@
 
 <section id="work">
 <h2>Work</h2>
-<ul>
-<li><strong>Holland Neurotech / Go Go Gaia</strong> (2024–): founder. iOS women's health app; cycle, pregnancy, mood, habits and wearable data in one model of the person. Links: <a href="https://apps.apple.com/ca/app/go-go-gaia/id6608432371">App Store</a>, <a href="https://www.go-go-gaia.com/">go-go-gaia.com</a>.</li>
-<li><strong>IDUN Technologies</strong> (Zurich): product owner, Guardian in-ear EEG headphones; CDL.</li>
-<li><strong>UCL Queen Square</strong>: MSc clinical neuroscience; deep-learning dementia diagnostics.</li>
-<li><strong>Muse (Interaxon)</strong> (Toronto): prototyped the Muse S sleepband.</li>
-<li><strong>NeuroTechX</strong>: built a neuro-data aggregator for researchers; led ~50 people.</li>
-<li><strong>Queen's University</strong>: BASc biomechanical engineering.</li>
-<li><strong>Neurotech company directory</strong>: a directory of neurotech companies I maintain. <a href="directory.html">Open the directory</a>.</li>
+<ul class="timeline">
+<li><span class="yr">2025–present</span><strong>Holland Neurotech / Go Go Gaia</strong>: founder. iOS women's health app; cycle, pregnancy, mood, habits and wearable data in one model of the person. Links: <a href="https://apps.apple.com/ca/app/go-go-gaia/id6608432371">App Store</a>, <a href="https://www.go-go-gaia.com/">go-go-gaia.com</a>.</li>
+<li><span class="yr">2022–2024</span><strong>IDUN Technologies</strong> (Zurich): product owner, Guardian in-ear EEG headphones; CDL.</li>
+<li><span class="yr">2022</span><strong>UCL Queen Square</strong>: MSc clinical neuroscience; deep-learning dementia diagnostics.</li>
+<li><span class="yr">2018–2020</span><strong>NeuroTechX</strong>: built a neuro-data aggregator for researchers; led ~50 people.</li>
+<li><span class="yr">2020</span><strong>Queen's University</strong>: BASc biomechanical engineering.</li>
+<li><span class="yr">2019</span><strong>Muse (Interaxon)</strong> (Toronto): prototyped the Muse S sleepband.</li>
+<li><span class="yr"></span><strong>Neurotech company directory</strong>: a directory of neurotech companies I maintain. <a href="directory.html">Open the directory</a>.</li>
 </ul>
 </section>
 
@@ -82,10 +96,21 @@
 <p>To define a technology's cybiosis I look at four things: applicability (how useful is the data), data quality (precision, consistency, reliability), adoptability (ease of use, comfort, cost), and scalability (reach, accessibility, integration). The full argument is in the two essays above.</p>
 </section>
 
+<section id="believe">
+<h2>What I believe</h2>
+<ul class="beliefs">
+<li>Our mission is to build a health system around each person.</li>
+<li>We start with women, because medicine has studied them least.</li>
+<li>Our dependence on technology has already made many humans cyborgs.</li>
+<li>Sometimes, the convenience and early detection capabilities of mass-market devices can be more advantageous.</li>
+<li>Designing a perfect device for one person only helps that one person.</li>
+</ul>
+</section>
+
 <section id="reading">
 <h2>Things I've read</h2>
 <p>Books and articles that have shaped how I think. If you've read one, let's talk about it.</p>
-<ul>
+<ul class="reading-list">
 <li>Oryx and Crake, Margaret Atwood</li>
 <li>Lilith's Brood, Octavia E. Butler</li>
 <li>Beggars in Spain, Nancy Kress</li>
