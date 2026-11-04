@@ -21,9 +21,11 @@ h2::before{content:"";position:absolute;top:0;left:0;width:2rem;height:2px;backg
 h3{font-size:1.1rem;font-weight:500;margin:1.75rem 0 .4rem}
 p{margin:0 0 1.1rem}
 section{margin-top:5rem}
-.hero{display:grid;grid-template-columns:1fr;gap:1.5rem;margin-top:3rem}
+.hero{margin-top:3rem}
+.hero-top{display:flex;align-items:center;gap:1.25rem;margin-bottom:1.5rem}
+.hero-top h1{margin:0}
 .lede{font-size:1.2rem;line-height:1.65}
-.portrait{margin:0;order:-1}
+.portrait{margin:0;flex:0 0 auto}
 .portrait img{display:block;width:112px;height:112px;object-fit:cover;border-radius:50%}
 .portrait[hidden]{display:none}
 ul{padding-left:1.2rem;margin:0 0 1.1rem}
@@ -32,10 +34,8 @@ li{margin:.6rem 0}
 .beliefs li{border-left:2px solid var(--accent);padding-left:1rem;margin:0 0 1rem}
 footer{margin-top:4rem;padding-top:1.5rem;padding-bottom:3rem;border-top:1px solid var(--rule);color:var(--muted);font-size:.95rem}
 @media (min-width:760px){
-.hero{grid-template-columns:1fr 160px;gap:2.5rem;align-items:start}
-.portrait{order:0}
-.portrait img{width:160px;height:160px}
-.hero:has(.portrait[hidden]){grid-template-columns:1fr}
+.hero-top{gap:1.75rem;margin-bottom:2rem}
+.portrait img{width:140px;height:140px}
 }
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 
