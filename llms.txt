@@ -1,0 +1,10 @@
+# Abby Holland
+> Personal site of Abby Holland (Abigail Holland): biomechanical engineer, neurotech founder, maker of Go Go Gaia, coiner of "cybiosis". Lives between San Francisco, Zurich, Toronto and London.
+## Pages
+- [Home](https://hollandneurotech.com/): bio, work, writing, cybiosis, reading, FAQ
+- [Neurotech company directory](https://hollandneurotech.com/directory.html)
+## Writing
+- [Neurotech Nerds' Nexus](https://neurotechnerd.substack.com/)
+## Elsewhere
+- [Go Go Gaia](https://www.go-go-gaia.com/)
+- [X](https://x.com/holland_neuro)
