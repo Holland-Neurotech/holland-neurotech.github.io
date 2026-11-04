@@ -98,7 +98,3 @@ footer{margin-top:4rem;padding-top:1.5rem;padding-bottom:3rem;border-top:1px sol
 .quiet h2::before{background:var(--rule)}
 .quiet h3{font-size:.95rem;color:var(--muted)}
 @media (prefers-reduced-motion:reduce){.covers .cover,.js .blurb.open{transition:none;animation:none}}
-
-.questions{list-style:none;padding:0;margin:0 0 1rem}
-.questions li{margin:0 0 .55rem;padding-left:1.1rem;position:relative}
-.questions li::before{content:"";position:absolute;left:0;top:.75em;width:6px;height:6px;border-radius:50%;background:var(--accent)}
